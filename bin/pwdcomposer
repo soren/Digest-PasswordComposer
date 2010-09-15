@@ -1,0 +1,27 @@
+#!perl
+
+use warnings;
+use strict;
+use feature qw(say);
+
+package pwdcomposer;
+
+# ABSTRACT: command line tool to generate a password
+
+use Term::ReadKey;
+use Digest::PasswordComposer;
+
+if ($#ARGV == 0) {
+  my $domain = $ARGV[0];
+
+  ReadMode 2;
+  say "Enter password (will not echo)";
+  chomp(my $password = ReadLine(0));
+  ReadMode 0;
+
+  say Digest::PasswordComposer::pwdcomposer($domain, $password);
+
+} else {
+  say STDERR "Usage: <password site> (host name, like \"perl.org\"";
+}
+
