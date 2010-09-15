@@ -18,22 +18,38 @@ This module can generate unique passwords for web sites, using the same algorith
 
 =cut
 
-sub new {
-  my ($class) = @_;
+=method pwdcomposer
 
-  bless { domain => '' }, $class;
-}
+=cut 
 
 sub pwdcomposer {
   my ($domain, $pwd) = @_;
   return substr(md5_hex("$pwd:$domain"),0,8);
 }
 
+=method new
+
+=cut
+
+sub new {
+  my ($class) = @_;
+
+  bless { domain => '' }, $class;
+}
+
+=method domain
+
+=cut
+
 sub domain {
   my $self = shift;
   if (@_) { $self->{domain} = shift }
   return $self->{domain};
 }
+
+=method password
+
+=cut
 
 sub password {
   my $self = shift;
