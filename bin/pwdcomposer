@@ -9,7 +9,7 @@ package pwdcomposer;
 # ABSTRACT: command line tool to generate a password
 
 use Term::ReadKey;
-use Digest::PasswordComposer;
+use Digest::PasswordComposer qw(pwdcomposer);
 
 if ($#ARGV == 0) {
   my $domain = $ARGV[0];
@@ -19,7 +19,7 @@ if ($#ARGV == 0) {
   chomp(my $password = ReadLine(0));
   ReadMode 0;
 
-  say Digest::PasswordComposer::pwdcomposer($domain, $password);
+  say pwdcomposer($domain, $password);
 
 } else {
   say STDERR "Usage: <password site> (host name, like \"perl.org\"";

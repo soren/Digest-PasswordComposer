@@ -1,19 +1,13 @@
+package Digest::PasswordComposer;
+# ABSTRACT: Generate unique passwords for web sites.
+
 use strict;
 use warnings;
 
-BEGIN {
-  use Exporter ();
-  our (@ISA, @EXPORT, @EXPORT_OK);
-
-  @ISA = qw(Exporter);
-  @EXPORT = qw(&pwdcomposer);
-  @EXPORT_OK = qw();
-}
-
-our $EXPORT_OK;
-
-package Digest::PasswordComposer;
-# ABSTRACT: Generate unique passwords for web sites.
+use Exporter;
+our (@ISA, @EXPORT_OK);
+@ISA = qw(Exporter);
+@EXPORT_OK = qw(pwdcomposer);
 
 use Digest::MD5 qw(md5_hex);
 
