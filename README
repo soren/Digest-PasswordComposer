@@ -1,7 +1,0 @@
-A perl module Digest::PasswordComposer that generates unique passwords for web sites. The generated passwords are created using a Master Password.
-
-The module is based on the Password Composer scripts at
-
-http://www.xs4all.nl/~jlpoutre/BoT/Javascript/PasswordComposer/
-
-With the same Master Password the generated password will be the same.
