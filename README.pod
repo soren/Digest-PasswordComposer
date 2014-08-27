@@ -1,6 +1,8 @@
 =head1 Digest::PasswordComposer
 
-Digest::PasswordComposer is a perl module that generates unique passwords for web sites. The generated passwords are created using a Master Password.
+L<Digest::PasswordComposer|https://metacpan.org/release/Digest-PasswordComposer>
+is a perl module that generates unique passwords for web sites.
+The generated passwords are created using a Master Password.
 
 The module is based on the Password Composer scripts at
 L<http://www.xs4all.nl/~jlpoutre/BoT/Javascript/PasswordComposer/>
