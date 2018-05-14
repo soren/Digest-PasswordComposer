@@ -5,7 +5,12 @@ is a perl module that generates unique passwords for web sites.
 The generated passwords are created using a Master Password.
 
 The module is based on the Password Composer scripts at
-L<http://www.xs4all.nl/~jlpoutre/BoT/Javascript/PasswordComposer/>
+L<http://www.xs4all.nl/~jlpoutre/BoT/Javascript/PasswordComposer/> which is now defunct.
+
+The original Greease Monkey script is still available here 
+L<http://userscripts.org/scripts/show/1341>.
+
+There's also a Google Chrome extension available.
 
 With the same Master Password the generated password will be the same.
 
