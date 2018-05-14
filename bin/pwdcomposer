@@ -22,6 +22,5 @@ if ($#ARGV == 0) {
   say pwdcomposer($domain, $password);
 
 } else {
-  say STDERR "Usage: <password site> (host name, like \"perl.org\"";
+  say STDERR "Usage: <password site> (host name, like \"perl.org\")";
 }
-
